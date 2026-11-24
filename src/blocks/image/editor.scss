@@ -1,0 +1,9 @@
+@use "@css" as *;
+
+.media-upload-placeholder {
+    @include media-upload-placeholder;
+
+    .components-placeholder{
+        height: -webkit-fill-available;
+    }
+}

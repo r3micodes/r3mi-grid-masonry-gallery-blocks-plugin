@@ -1,0 +1,158 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/@wordpress/scripts/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/@wordpress/scripts/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/grid-gallery/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* Front end and editor styles shared by both blocks. */
+.r3mi-grid-gallery {
+  --grid-columns: 3;
+  --grid-gap: 12px;
+  --grid-image-corners: 0px;
+  --grid-aspect-ratio: 1/1;
+  width: 100%;
+}
+.r3mi-grid-gallery .r3mi-gallery-grid-editor .block-editor-block-list__layout,
+.r3mi-grid-gallery .r3mi-grid-gallery-item {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  gap: var(--grid-gap);
+  align-items: start;
+}
+.r3mi-grid-gallery .r3mi-gallery-image {
+  margin: 0;
+  position: relative;
+  min-width: 0;
+}
+.r3mi-grid-gallery .r3mi-gallery-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: var(--grid-aspect-ratio);
+  border-radius: var(--grid-image-corners);
+  overflow: hidden;
+}
+.r3mi-grid-gallery .r3mi-gallery-image span.image-expand {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 11;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2509803922);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  cursor: zoom-in;
+}
+.r3mi-grid-gallery .r3mi-gallery-image span.image-expand svg {
+  width: 18px;
+  height: 18px;
+  color: #ffffff;
+}
+.r3mi-grid-gallery .r3mi-gallery-image:hover span.image-expand {
+  opacity: 1;
+}
+.r3mi-grid-gallery[data-caption-alignment] figcaption {
+  text-align: var(--grid-caption-alignment);
+}
+.r3mi-grid-gallery[data-caption-type=full-overlay] .r3mi-gallery-image figure {
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+}
+.r3mi-grid-gallery[data-caption-type=full-overlay] .r3mi-gallery-image figure::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.6;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--grid-image-corners);
+}
+.r3mi-grid-gallery[data-caption-type=full-overlay] .r3mi-gallery-image figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: -webkit-fill-available;
+  color: #ffffff;
+  z-index: 1;
+}
+.r3mi-grid-gallery[data-caption-type=full-overlay] .r3mi-gallery-image figure figcaption span {
+  padding: 8px 10px;
+  display: inline-block;
+}
+.r3mi-grid-gallery[data-caption-type=bar-overlay] .r3mi-gallery-image figure {
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+}
+.r3mi-grid-gallery[data-caption-type=bar-overlay] .r3mi-gallery-image figure figcaption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: -webkit-fill-available;
+  color: #ffffff;
+  z-index: 1;
+}
+.r3mi-grid-gallery[data-caption-type=bar-overlay] .r3mi-gallery-image figure figcaption span {
+  padding: 8px 10px;
+  display: inline-block;
+}
+.r3mi-grid-gallery[data-caption-type=bar-overlay] .r3mi-gallery-image figure figcaption {
+  border-bottom-right-radius: var(--grid-image-corners);
+  border-bottom-left-radius: var(--grid-image-corners);
+  overflow: hidden;
+}
+.r3mi-grid-gallery[data-caption-type=bar-overlay] .r3mi-gallery-image figure figcaption::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.6;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.25) 85%, transparent 100%);
+  z-index: -1;
+  top: 0;
+}
+.r3mi-grid-gallery[data-hover-effect=on] .r3mi-gallery-image figure {
+  overflow: hidden;
+  position: relative;
+  width: fit-content;
+  border-radius: var(--grid-image-corners);
+}
+.r3mi-grid-gallery[data-hover-effect=on] .r3mi-gallery-image figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.r3mi-grid-gallery[data-hover-effect=on] .r3mi-gallery-image figure:hover img {
+  transform: scale(1.1);
+}
+.r3mi-grid-gallery[data-hover-effect=on][data-caption-visibilty=show-hover] figcaption {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 0;
+}
+.r3mi-grid-gallery[data-hover-effect=on][data-caption-visibilty=show-hover] figure:hover figcaption {
+  opacity: 1;
+}
+.r3mi-grid-gallery[data-hover-effect=on][data-caption-visibilty=hide-hover] figcaption {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  opacity: 1;
+}
+.r3mi-grid-gallery[data-hover-effect=on][data-caption-visibilty=hide-hover] figure:hover figcaption {
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .r3mi-grid-gallery {
+    --grid-columns: 2 !important;
+  }
+}

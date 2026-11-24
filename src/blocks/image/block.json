@@ -1,0 +1,54 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "r3mi/image",
+  "ancestor": ["r3mi/grid-gallery", "r3mi/masonry-gallery"],
+  "version": "1.0.0",
+  "title": "Image",
+  "category": "r3mi-grid-masonry-gallery-blocks",
+  "icon": "format-image",
+  "description": "Make your content stand out with an image",
+  "textdomain": "r3mi-grid-masonry-gallery-blocks",
+  "attributes": {
+    "imageId": {
+      "type": "number"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageCaption": {
+      "type": "string",
+      "default": ""
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": "auto"
+    },
+    "imageSize": {
+      "type": "string",
+      "default": "auto"
+    },
+    "showCaptions": {
+      "type": "boolean",
+      "default": false
+    },
+    "lightbox": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "inserter": true,
+    "reusable": true
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "usesContext": [
+    "context/galleryType",
+    "context/showCaptions",
+    "context/lightbox"
+  ]
+}

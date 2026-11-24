@@ -1,0 +1,33 @@
+@use "@css" as *;
+
+
+.r3mi-gallery-grid-editor {
+    .block-editor-inner-blocks {
+        width: 100%;
+    }
+
+    /* .block-editor-block-list__layout {
+        display: grid;
+        grid-template-columns: repeat(var(--grid-columns),
+                minmax(0, 1fr));
+        gap: var(--grid-gap);
+        align-items: start;
+    } */
+
+    .block-editor-block-list__block {
+        margin: 0 !important;
+        min-width: 0;
+        height: -webkit-fill-available;
+    }
+
+    /* .block-editor-block-list__insertion-point {
+        grid-column: 1 / -1;
+        position: relative;
+    } */
+
+    .media-image-empty,
+    .media-upload-placeholder .components-placeholder,
+    .media-upload-placeholder {
+        border-radius: var(--grid-image-corners);
+    }
+}

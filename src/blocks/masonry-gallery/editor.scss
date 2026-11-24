@@ -1,0 +1,25 @@
+@use "@css" as *;
+
+.r3mi-gallery-masonry-editor {
+    .block-editor-inner-blocks {
+        width: 100%;
+    }
+
+    .media-image-empty,
+    .media-upload-placeholder .components-placeholder,
+    .media-upload-placeholder {
+        border-radius: var(--grid-image-corners);
+        height: 300px;
+        width: -webkit-fill-available;
+    }
+}
+
+[data-inner-images-blocks="1"] {
+
+    .media-image-empty,
+    .media-upload-placeholder .components-placeholder,
+    .media-upload-placeholder {
+        height: 300px;
+        width: 300px;
+    }
+}

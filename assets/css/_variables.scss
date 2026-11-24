@@ -1,0 +1,11 @@
+$wp-border-color: #dddddd;
+$upload-placeholder-border-color: #949494;
+$upload-placeholder-bg-color: #f7f7f7;
+
+
+@mixin transition($delay) {
+    -webkit-transition: all $delay ease;
+    -moz-transition: all $delay ease;
+    -o-transition: all $delay ease;
+    transition: all $delay ease;
+}

@@ -1,0 +1,72 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/@wordpress/scripts/node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/@wordpress/scripts/node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/masonry-gallery/editor.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomInSmall {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes zoomInSmall2 {
+  from {
+    transform: scale(0.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes slideNext {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slidePrev {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.r3mi-gallery-masonry-editor .block-editor-inner-blocks {
+  width: 100%;
+}
+.r3mi-gallery-masonry-editor .media-image-empty,
+.r3mi-gallery-masonry-editor .media-upload-placeholder .components-placeholder,
+.r3mi-gallery-masonry-editor .media-upload-placeholder {
+  border-radius: var(--grid-image-corners);
+  height: 300px;
+  width: -webkit-fill-available;
+}
+
+[data-inner-images-blocks="1"] .media-image-empty,
+[data-inner-images-blocks="1"] .media-upload-placeholder .components-placeholder,
+[data-inner-images-blocks="1"] .media-upload-placeholder {
+  height: 300px;
+  width: 300px;
+}

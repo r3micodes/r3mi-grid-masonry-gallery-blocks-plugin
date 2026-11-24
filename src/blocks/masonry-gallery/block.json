@@ -1,0 +1,79 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "r3mi/masonry-gallery",
+  "version": "1.0.0",
+  "title": "Masonry Gallery",
+  "category": "r3mi-grid-masonry-gallery-blocks",
+  "icon": "format-gallery",
+  "description": "Create a responsive image masonry gallery with adjustable columns and spacing, featuring an image enlargement (lightbox) option.",
+  "textdomain": "r3mi-grid-masonry-gallery-blocks",
+  "attributes": {
+    "columns": {
+      "type": "number",
+      "default": 3
+    },
+    "gap": {
+      "type": "number",
+      "default": 12
+    },
+    "corners": {
+      "type": "number",
+      "default": 0
+    },
+    "lightbox": {
+      "type": "boolean",
+      "default": false
+    },
+    "lightboxThumbnail": {
+      "type": "boolean",
+      "default": false
+    },
+    "lightboxImageMode": {
+      "type": "string",
+      "default": "slide"
+    },
+    "showCaptions": {
+      "type": "boolean",
+      "default": false
+    },
+    "hoverEffect": {
+      "type": "boolean",
+      "default": false
+    },
+    "lazyLoading": {
+      "type": "boolean",
+      "default": false
+    },
+    "captionType": {
+      "type": "string",
+      "default": "below-image"
+    },
+    "captionVisibility": {
+      "type": "string",
+      "default": "always-visible"
+    },
+    "captionAlignment": {
+      "type": "string",
+      "default": "center"
+    },
+    "galleryType": {
+      "type": "string",
+      "default": "masonry"
+    }
+  },
+  "supports": {
+    "html": false,
+    "inserter": true
+  },
+  "allowedBlocks": ["r3mi/image"],
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "viewScript": "file:./view.js",
+  "style": "file:./style-index.css",
+  "providesContext": {
+    "context/galleryType": "galleryType",
+    "context/showCaptions": "showCaptions",
+    "context/lightbox": "lightbox"
+  }
+}

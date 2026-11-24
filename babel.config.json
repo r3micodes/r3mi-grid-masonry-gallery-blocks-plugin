@@ -1,0 +1,23 @@
+{
+    "presets": [
+        "@wordpress/babel-preset-default"
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": [
+                    "./src"
+                ],
+                "alias": {
+                    "@css": "./assets/css",
+                    "@blocks": "./src/blocks",
+                    "@components": "./src/components",
+                    "@utils": "./src/utils",
+                    "@assetsStyles": "./src/assets/css",
+                    "@assetsJS": "./src/assets/js"
+                }
+            }
+        ]
+    ]
+}

@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+@mixin media-upload-placeholder {
+    //display: flex;
+    min-height: 150px;
+    height: -webkit-fill-available;
+    /* padding: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px dashed $upload-placeholder-border-color;
+    background-color: $upload-placeholder-bg-color; */
+
+    div {
+        margin: 0;
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 1.1;
+    }
+}
